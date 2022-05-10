@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Calculator.common\Calculator.common.csproj" />
+    <ProjectReference Include="..\CSharpCalculator.WebUI\CSharpCalculator.WebUI.csproj" />
+  </ItemGroup>
+
+</Project>

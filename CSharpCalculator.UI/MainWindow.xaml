@@ -1,0 +1,27 @@
+﻿<Window x:Class="CSharpCalculator.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpCalculator.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox Name ="Select"  HorizontalAlignment="Left" Margin="263,72,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content ="+" IsSelected="True"></ComboBoxItem>
+            <ComboBoxItem Content="-"></ComboBoxItem>
+            <ComboBoxItem Content="*"></ComboBoxItem>
+            <ComboBoxItem Content="/"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Left" Margin="263,144,0,0" VerticalAlignment="Top" Width="195" Height="56" Click="Button_Click"/>
+        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="512,144,0,0" VerticalAlignment="Top" Width="193" Height="56" Click="Button_Click_1"/>
+        <TextBox Name ="Number1"  HorizontalAlignment="Left" Margin="83,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="54" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox Name ="Number2"  HorizontalAlignment="Left" Margin="490,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Height="51" TextChanged="TextBox_TextChanged_2"/>
+        <TextBox Name ="Result"  HorizontalAlignment="Left" Margin="429,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Height="73" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Number1" HorizontalAlignment="Left" Margin="83,39,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Number2" HorizontalAlignment="Left" Margin="490,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.686,0.492" Width="215"/>
+        <Label Content="Result" HorizontalAlignment="Left" Margin="429,229,0,0" VerticalAlignment="Top" Width="179"/>
+
+    </Grid>
+
+</Window>
